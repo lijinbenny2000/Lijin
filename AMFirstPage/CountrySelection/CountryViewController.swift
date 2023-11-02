@@ -61,8 +61,7 @@ extension CountryViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = countries[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCellIdentifier", for: indexPath) as? countryCustomCell
-        // Set the localized name in the cell
-        if let localizedName = localizedCountryNames[data] {
+        if let localizedName = localizedCountryNames[data] {                    // Setting the localized name in the cell
             cell?.fillCustomCell(imageIcon: data.icon, imageTitle: localizedName, checklist: "checklist")
         }
         return cell ?? UITableViewCell()

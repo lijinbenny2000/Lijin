@@ -44,7 +44,6 @@ class ViewController: UIViewController {
     
     func customFontStyle() {
         let buttonFont = UIFont(name: "Arial Bold", size: 13.0)  // Can change the font size as needed
-
         let attributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: buttonFont ?? ""
         ]
