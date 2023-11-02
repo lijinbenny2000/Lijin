@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="languageCell" rowHeight="63" id="nQo-dS-RL0" customClass="languageCustomCell" customModule="AMFirstPage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQo-dS-RL0" id="u1E-6w-goh">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJl-iE-NI9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUI-fQ-Keg">
+                                <rect key="frame" x="169.66666666666666" y="22.666666666666664" width="53.666666666666657" height="17.666666666666664"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zIl-K0-CUK">
+                                <rect key="frame" x="328" y="11.666666666666657" width="42" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="3ts-ni-WG5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zIl-K0-CUK" firstAttribute="top" secondItem="tJl-iE-NI9" secondAttribute="top" constant="8.9999999999999929" id="67u-0R-yo0"/>
+                            <constraint firstItem="zIl-K0-CUK" firstAttribute="centerY" secondItem="UUI-fQ-Keg" secondAttribute="centerY" id="Agd-I3-B5w"/>
+                            <constraint firstItem="UUI-fQ-Keg" firstAttribute="centerY" secondItem="tJl-iE-NI9" secondAttribute="centerY" id="OzF-sv-jeX"/>
+                            <constraint firstItem="UUI-fQ-Keg" firstAttribute="centerX" secondItem="tJl-iE-NI9" secondAttribute="centerX" id="SHN-4w-8Ta"/>
+                            <constraint firstAttribute="trailing" secondItem="zIl-K0-CUK" secondAttribute="trailing" constant="23" id="Von-qG-OTn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tJl-iE-NI9" firstAttribute="top" secondItem="u1E-6w-goh" secondAttribute="top" id="8cZ-gw-BRy"/>
+                    <constraint firstAttribute="trailing" secondItem="tJl-iE-NI9" secondAttribute="trailing" id="QBd-2V-Wpe"/>
+                    <constraint firstItem="tJl-iE-NI9" firstAttribute="leading" secondItem="u1E-6w-goh" secondAttribute="leading" id="W8R-cT-CzM"/>
+                    <constraint firstAttribute="bottom" secondItem="tJl-iE-NI9" secondAttribute="bottom" id="sDA-Df-Jt3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkListImage" destination="zIl-K0-CUK" id="mKj-Fq-dx7"/>
+                <outlet property="customlanguage" destination="UUI-fQ-Keg" id="ZKh-7t-hAj"/>
+            </connections>
+            <point key="canvasLocation" x="345.80152671755724" y="-156.69014084507043"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

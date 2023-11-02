@@ -1,0 +1,25 @@
+/*
+ Localizable.strings
+ AMFirstPage
+ 
+ Created by Lijin Benny on 30/10/23.
+ 
+
+*/
+"Strings_jordan" = "Jordan";
+"Strings_palestine" = "Palestine";
+"Strings_egypt" = "Egypt";
+"Strings_lebanon" = "Lebanon";
+"Strings_qatar" = "Qatar";
+"Strings_uae" = "UAE";
+"Strings_algeria" = "Algeria";
+"Strings_beharain" = "Beharain";
+
+"Strings_testUserButton" = "Test User";
+"Strings_loginButton" = "Login";
+"Strings_changeCountryButton" = "Change Country";
+"Strings_forgotButton" = "Forgot Username/Password";
+"Strings_usernamePlaceholder" = "Username";
+"Strings_passwordPlaceholder" = "Password";
+
+

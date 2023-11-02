@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ArabBankLogo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
