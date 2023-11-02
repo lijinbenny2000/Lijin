@@ -43,6 +43,8 @@ class CountryViewController: UIViewController {
             exit(0)
         }
         alertController.addAction(dismissAction)
+//        alertController.popoverPresentationController?.sourceView = self.view
+//        alertController.popoverPresentationController?.sourceRect = self.tableView.bounds
         self.present(alertController, animated: true, completion: nil)
         
     }
