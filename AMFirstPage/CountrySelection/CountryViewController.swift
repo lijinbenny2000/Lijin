@@ -33,8 +33,6 @@ class CountryViewController: UIViewController {
         super.viewDidLoad()
        
         countryTableView.register(UINib(nibName: "countryCustomCell", bundle: nil), forCellReuseIdentifier: "countryCellIdentifier")
-//        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "Select Country:", style: .plain, target: self, action: nil),
-//            UIBarButtonItem(image: UIImage.add, style: .plain, target: self, action: #selector(moreOptions))]
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.remove, style: .plain, target: self, action: #selector(dismissApp))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.add, style: .plain, target: self, action: #selector(moreOptions))
     }
@@ -77,8 +75,6 @@ extension CountryViewController: UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.cellForRow(at: indexPath) as? countryCustomCell
             cell?.showSelectionIndicator()
             cell?.selectionStyle = .none
-//        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-//        dismiss(animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
