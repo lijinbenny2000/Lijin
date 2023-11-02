@@ -68,7 +68,6 @@ extension CountryViewController: UITableViewDelegate,UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
 
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCountry = countries[indexPath.row]
         if let localizedName = localizedCountryNames[selectedCountry] {

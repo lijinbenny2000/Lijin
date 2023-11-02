@@ -39,10 +39,17 @@ class languageViewController: UIViewController {
         }
         alertController.addAction(dismissAction)
         self.present(alertController, animated: true, completion: nil)
-        
     }
     @objc func dismissApp(){
         dismiss(animated: true, completion: nil)
+    }
+    func alertforLanguageSelection() {
+        let alertController = UIAlertController(title: "Alert", message: "Please quit the application to change the language.", preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: "Quit", style: .destructive) { _ in
+            exit(0)
+        }
+        alertController.addAction(dismissAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
 
@@ -51,8 +58,7 @@ extension languageViewController: UITableViewDelegate,UITableViewDataSource {
     func setAppLanguage(_ languageCode: String) {
         UserDefaults.standard.set([languageCode], forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
-        UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
-        exit(0)
+        alertforLanguageSelection()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -27,8 +27,6 @@ enum Strings: String{
     case usernamePlaceholder
     case passwordPlaceholder
     
-    
-    
     var localized: String {
         NSLocalizedString(String(describing: Self.self) + "_\(rawValue)", comment: "")
         }
